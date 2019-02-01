@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="loginscreen">#0d8fc2</color>
+    <color name="lightpink">#fff0f5</color>
+    <color name="hintcolor">#ab003c</color>
+    <color name="white">#FAFAFA</color>
+    <color name="grey">#ded9d9</color>
+</resources>

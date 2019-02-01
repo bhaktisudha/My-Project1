@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegistrationFormActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CAMPAIGN INQUIRY DETAILS"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/loginscreen"
+                android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:id="@+id/dealer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name Of The Dealer"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        />
+                    <EditText
+                        android:id="@+id/customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name Of The Lead Customer"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        />
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Customer Address"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"/>
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile Number"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"/>
+                    <EditText
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Campaign Location"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/lead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Lead status"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="15sp"
+                        />
+                    <Spinner
+                        android:id="@+id/lead_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        ></Spinner>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#666666"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/ridetaken"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Test Ride Taken"
+                            android:gravity="center_horizontal"
+                            android:textSize="15dp"
+
+                            />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rider_radio_group"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/testrideyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Yes"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:padding="5dp"/>
+
+                            <RadioButton
+                                android:id="@+id/tstrideno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  No"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:padding="5dp"/>
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/bookingdone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Booking Done"
+                            android:gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:padding="5dp"
+                            />
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bookingdoneradioGroup"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal"
+                            android:gravity="center_horizontal"
+
+
+                            >
+
+                            <RadioButton
+                                android:id="@+id/bookingdoneYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Yes"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:padding="5dp"/>
+
+                            <RadioButton
+                                android:id="@+id/bookingdoneno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  No"
+                                android:checked="false"
+                                android:textSize="15dp"
+                                android:padding="5dp"/>
+                        </RadioGroup>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="SUBMIT"
+                android:textColor="@color/loginscreen"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
