@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
         LastName = (EditText)findViewById(R.id.edt2);
         send = (Button)findViewById(R.id.btn);
         frameLayout = (FrameLayout)findViewById(R.id.container);
+        if(findViewById(R.id.container)!= null){
+            if(savedInstanceState != null){
+                return;
+            }
+        }
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override

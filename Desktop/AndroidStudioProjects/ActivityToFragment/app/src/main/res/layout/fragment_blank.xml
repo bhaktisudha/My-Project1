@@ -18,19 +18,24 @@
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:layout_marginTop="40dp"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/textview_shape"
     android:textColor="#FFFF"
-    android:layout_gravity="center_horizontal"/>
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:textSize="20sp"
+    />
     <TextView
         android:id="@+id/lname"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
         android:background="@color/colorPrimary"
         android:textColor="#FFFF"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:text="Send Data to Second Fragment"
+        android:gravity="center"/>
 </LinearLayout>
 
 </FrameLayout>
